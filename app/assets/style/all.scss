@@ -1,14 +1,17 @@
 $color: #00cc99;
 $color2: red;
 
-.header {
+@mixin basic {
   height: 200px;
   background-color: #00cc99;
 }
 
+.header {
+  @include basic;
+}
+
 .footer {
-  height: 200px;
-  background-color: #00cc99;
+  @include basic;
 }
 
 .box {
